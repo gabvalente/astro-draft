@@ -1,8 +1,9 @@
 ---
 
 import '../styles/global.css';
-import Navbar from '../components/nav.astro';
-
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
 
 
 const pageTitle = "About Me";
@@ -41,9 +42,8 @@ const textCase = "uppercase";
     </style>
   </head>
 
-  <body>
-    <Navbar />
-
+  <body>  
+  <Header />
     <h1>{pageTitle}</h1>
     <h2>... and my new Astro site!</h2>
 
@@ -66,5 +66,6 @@ const textCase = "uppercase";
     <ul>
       {skills.map((skill) => <li class="skill">{skill}</li>)}
     </ul>
+    <Footer />
   </body>
 </html>
