@@ -1,0 +1,51 @@
+
+---
+title: "Navbar"
+---
+
+<nav class="navbar">
+  <a href="/" class="navbar__logo">My Website</a>
+  <ul class="navbar__list">
+    <li class="navbar__item"><a href="/" class="navbar__link">Home</a></li>
+    <li class="navbar__item"><a href="/about" class="navbar__link">About</a></li>
+    <li class="navbar__item"><a href="/blog" class="navbar__link">Blog</a></li>
+  </ul>
+</nav>
+
+<style>
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+  }
+
+  .navbar__logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .navbar__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar__item {
+    margin-left: 1rem;
+  }
+
+  .navbar__link {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .navbar__link:hover {
+    text-decoration: underline;
+  }
+</style>
